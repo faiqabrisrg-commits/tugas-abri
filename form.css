@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+form {
+    width: 480px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #708090;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+legend {
+    color: #4682b4;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Mengatur baris form agar label & input sejajar */
+.form-group {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.form-group.align-top {
+    align-items: flex-start;
+}
+
+.form-group label {
+    width: 160px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Modifikasi input text, password, select, dan textarea */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #708090;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Grup radio dan checkbox */
+.options-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.options-group label {
+    width: auto;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Styling Tombol Submit & Reset */
+.button-group {
+    margin-top: 15px;
+}
+
+.button-group button {
+    padding: 6px 16px;
+    border: 1px solid #708090;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.button-group button[type="submit"] {
+    background-color: #4682b4;
+    color: white;
+    border-color: #36648b;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
