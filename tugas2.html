@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .box {
+            border: 1px solid #ee0101;
+            padding: 20px;
+            width: 320px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 140px;
+        }
+        .form-group input {
+            width: 160px;
+            padding: 2px;
+        }
+        .tombol-wrapper {
+            margin-left: 140px;
+            margin-bottom: 15px;
+            display: flex;
+            gap: 4px;
+        }
+        .tombol-wrapper button {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>kalkulator Aritmatika</h2>
+
+    <div class="box">
+        <div class="form-group">
+            <label for="bil1">Input Bilangan 1</label>
+            <input type="number" id="bil1">
+        </div>
+
+        <div class="form-group">
+            <label for="bil2">Input Bilangan 2</label>
+            <input type="number" id="bil2">
+        </div>
+
+        <div class="tombol-wrapper">
+            <button onclick="hitung('+')">+</button>
+
+            <button onclick="hitung('-')">-</button>
+
+            <button onclick="hitung('*')">x</button>
+
+            <button onclick="hitung('/')">/</button>
+        </div>
+
+        <div class="form-group">
+            <label for="output">Output</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </div>
+
+    <script>
+        function hitung(operator) {
+            let b1 = parseFloat(document.getElementById('bil1').value);
+
+            let b2 = parseFloat(document.getElementById('bil2').value);
+
+            let hasil = 0;
+
+            if (isNaN(b1) || isNaN(b2)) {
+                alert('Isi kedua angka dulu ya!');
+                return;
+            }
+
+            if (operator === '+') hasil = b1 + b2;
+            else if (operator === '-') hasil = b1 - b2;
+            else if (operator === '*') hasil = b1 * b2;
+            else if (operator === '/') {
+                if (b2 === 0) {
+                    alert('tdk bisa dibagi 0');
+                    return;
+                }
+                hasil = b1 / b2;
+            }
+
+            document.getElementById('output').value = hasil;
+        }
+    </script>
+</body>
+</html>
