@@ -1,0 +1,196 @@
+/* ================= GENERAL ================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 75px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.navbar-brand small {
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.nav-link {
+    margin-left: 8px;
+    color: #444;
+}
+
+.nav-link:hover {
+    color: #ff0000;
+}
+
+.btn-daftar {
+    border-radius: 5px;
+}
+
+.btn-masuk {
+    border-radius: 5px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 70px 0 50px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 470px;
+}
+
+.btn-mulai {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 620px;
+}
+
+
+/* ================= MATERI ================= */
+
+.materi-section {
+    background-color: #f8f9fa;
+    padding: 70px 0;
+}
+
+.materi-section h2 {
+    font-weight: bold;
+}
+
+.materi-card {
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.materi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-card {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #fa0303;
+}
+
+.materi-card h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.materi-card p {
+    color: #666;
+    min-height: 70px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .materi-section {
+        padding: 50px 15px;
+    }
+
+    .materi-section h2 {
+        font-size: 25px;
+    }
+
+    .materi-card {
+        margin-bottom: 10px;
+    }
+
+}
